@@ -1,5 +1,7 @@
 = Advanced CSS and Sass: Flexbox, Grid, animations and more!
 
+:toc:
+:imagesdir: note_images/
 
 .reset for all base projects
 ----
@@ -19,3 +21,60 @@
 * css animation might have a shake, but just use `backface-visibility: hidden;` and it should work without shake
 * apply transitions to initial state (link/visited)
 * apply keyframe `0%` first: `animation-fill-mode: backwards`
+
+=== Conceptual content ( How CSS Works: A look behind the scenes)
+
+==== 3 pillars for writing good html & css
+
+* responsive design
+** fluid layouts
+** media queries
+** responsive images
+** correct units
+** desktop-first vs mobile-first
+* maintainable and scalable code
+** clean
+** easy-to-understand
+** growth
+** reusable
+** how to organize files
+** how to name classes
+** how to structure HTML
+* web performance
+** less HTTP requests
+** less code
+** compress code
+** use a CSS preprocessor
+** *less images*
+** *compress images*
+
+==== an overview
+
+* what happens to css when we load up a webpage?
+** load HTML file
+
+image:Screenshot_20211212_080726.png[how css & html parsed by client]
+
+==== How CSS is parsed
+
+===== Part 1: The Cascade and Specificity
+
+.css terminology
+image:Screenshot_20211212_081446.png[CSS terminology]
+
+.specificity overview
+image:Screenshot_20211212_082501.png[specificity overview]
+
+* interprete specificities from left to right
+* whatever first highest number wins
+
+.specificity explained
+image:Screenshot_20211212_082106.png[specificity explained]
+
+.specificity recap
+image:Screenshot_20211212_082646.png[specificity recap]
+
+===== Part 2: Value processing
+
+.how values get parsed
+image:Screenshot_20211212_083657.png[how values get parsed]

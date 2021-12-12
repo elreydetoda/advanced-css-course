@@ -1,0 +1,20 @@
+= Advanced CSS and Sass: Flexbox, Grid, animations and more!
+
+
+.reset for all base projects
+----
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+----
+
+== Natours Project
+
+* used for polygon sizing for `clip-path` property: https://bennettfeely.com/clippy/
+* for browser performance, it's best to only animate 2 different properties (browsers are optimized for this)
+** opacity (`0` or `1`)
+** transform
+* css animation might have a shake, but just use `backface-visibility: hidden;` and it should work without shake
+* apply transitions to initial state (link/visited)

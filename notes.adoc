@@ -182,3 +182,35 @@ image:Screenshot_20211212_124237.png[modifier example]
 ** replace Sass w/any other CSS pre-processor
 +
 image:Screenshot_20211212_124822.png[seven folders structure]
+
+== SASS
+
+* Sass is a CSS preprocessor, an extension of CSS that add power and elegance to the basic language
+* Sass source code -> Sass compiler -> compiled CSS code
++
+.main features
+image:Screenshot_20211212_125915.png[main features image]
++
+* different Sass things (https://codepen.io/elrey741/pen/bGoBRPV)
+** `$color-primary: #f9ed69;` = creating a variable
+** nesting same as `.navigation li: {}`
++
+----
+.navigation {
+  list-style: none;
+
+  li {
+
+  }
+----
++
+** easily repeat nesting path with `&`, which is necessary for nesting psuedo elements (i.e. `&:first-child`)
+** should probably go deeper than 3 levels of nesting
+** mixin: reusable piece of code (i.e. huge variable with multiple lines of code)
+*** can take arguments
+** function: takes arguments and then returns information
+*** if want to _cast_ to pixel use this: `margin: divide(60,2) * 1px;`
+** placeholder + extend: write a placeholder, and then have a bunch of selectors extend place holder
+*** instead of mixin (pasting code wherever used), extends replaces a placeholder with the current selector (i.e. .btn--hot:link)
+*** only use extend if selectors are inherently and thematically related (i.e. a set of similar buttons)
+*** normally prefers mixins

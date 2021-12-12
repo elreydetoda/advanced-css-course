@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elreydetoda/advanced-css-course.git#subdirectory=Natours/starter"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elreydetoda/advanced-css-course/issues"
+  },
+  "homepage": "https://github.com/elreydetoda/advanced-css-course/tree/subdirectory%3DNatours%2Fstarter#readme",
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}

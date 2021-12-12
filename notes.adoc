@@ -3,12 +3,24 @@
 :toc:
 :imagesdir: note_images/
 
-.reset for all base projects
+.for all base projects
 ----
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* for rem calculation to 10px start */
+  font-size: 62.5%;
+}
+
+body {
   box-sizing: border-box;
+  /* ...other wanted stuff (i.e. font-family/weight) */
 }
 ----
 
@@ -78,3 +90,18 @@ image:Screenshot_20211212_082646.png[specificity recap]
 
 .how values get parsed
 image:Screenshot_20211212_083657.png[how values get parsed]
+
+.possible values with responsiveness
+image:Screenshot_20211212_115608.png[possible values with responsiveness]
+
+.summary slide
+image:Screenshot_20211212_115829.png[summary slide]
+
+
+===== Part 3: Inheritance
+
+.inheritance overview
+image:Screenshot_20211212_120112.png[inheritance overview]
+
+.inheritance recap
+image:Screenshot_20211212_120212.png[inheritance recap]

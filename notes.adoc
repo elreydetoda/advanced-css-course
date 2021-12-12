@@ -105,3 +105,80 @@ image:Screenshot_20211212_120112.png[inheritance overview]
 
 .inheritance recap
 image:Screenshot_20211212_120212.png[inheritance recap]
+
+==== The visual formatting model
+
+* def: algorithm that calculates boxes and determines  the layout of these boxes, for each element in the render tree, in order to determine the final layout of the page
+** combines all the information below to determine the view for the user
+*** dimensions of boxes: the box model
+*** box type: inline, block, and inline-block
+*** positioning scheme: floats and positioning
+*** stacking contexts
+*** other elements in the render tree
+*** viewport size, dimensions of images, etc...
+
+.the box model
+image:Screenshot_20211212_122144.png[the box model]
+
+.border-box box model
+image:Screenshot_20211212_122258.png[border-box box model]
+
+.different type of boxes to use
+image:Screenshot_20211212_122453.png[different type of boxes to use]
+
+* for float positioning, use clefixes? for resizing things when in float state
+
+.different types of positioning
+image:Screenshot_20211212_122724.png[different types of positioning]
+
+* stacking contexts
+** `z-index`: highest number = highest layer & lowest value (including negative) = lowest
+** other properties: opacity, transform, or filter can also affect stacking context
+
+==== CSS Architecture, components & BEM
+
+===== Think
+
+* *think* about the layout of your webpage or web app before writing code
+* component driven design
+** modular building blocks that make up interfaces
+** held together by the layout of the page
+** re-usable across a project, and between different projects
+** independent, allowing us to use them anywhere on the page
+* atomic design (organisms = components)
+
+===== Build
+
+* *build* your layout in HTML and CSS with a consistent structure for naming classes
+* BEM
+** **B**lock **E**lement **M**odifier
++
+.visual format
+----
+.block {}
+.block__element {}
+.block__element--modifier {}
+----
++
+** *BLOCK*: standalone component that is meaningful on its own
++
+image:Screenshot_20211212_124131.png[block example]
++
+** *ELEMENT*: part of a block that has no standalone meaning
++
+image:Screenshot_20211212_124206.png[element example]
++
+** *MODIFIER*: a different version of a block or an element
++
+image:Screenshot_20211212_124237.png[modifier example]
+
+===== Architecture
+
+* create a logical *architecture* for your CSS with files and folders
+* the 7-1 pattern
+** 7 different folders for partial Sass files, and
+** 1 main Sass file to import all other files into
+** a compiled CSS stylesheet
+** replace Sass w/any other CSS pre-processor
++
+image:Screenshot_20211212_124822.png[seven folders structure]

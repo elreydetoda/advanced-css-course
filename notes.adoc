@@ -18,3 +18,4 @@
 ** transform
 * css animation might have a shake, but just use `backface-visibility: hidden;` and it should work without shake
 * apply transitions to initial state (link/visited)
+* apply keyframe `0%` first: `animation-fill-mode: backwards`

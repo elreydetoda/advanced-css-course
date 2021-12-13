@@ -1,0 +1,23 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// example usage:
+// col_spacing(2, 3) = take up the width of 2 columns out of a 3 column grid
+@mixin col_spacing($num_col_occupy, $total_col_num) {
+  // used to initially calculate how many gutters there will be
+  $gutter_count: calc(#{$total_col_num} - 1);
+
+  // extra gutter space occupied when stretching multiple cols
+  $extra_gutter_space: calc(#{$gutter-horizontal} * (#{$num_col_occupy} - 1));
+
+  width: calc(
+    #{$num_col_occupy} * (
+        (100% - #{$gutter_count} * #{$gutter-horizontal}) / #{$total_col_num}
+      ) + #{$extra_gutter_space}
+  );
+}

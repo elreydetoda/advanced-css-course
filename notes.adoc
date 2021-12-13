@@ -254,3 +254,4 @@ image:Screenshot_20211212_192402.png[]
 ** figures out automatic sizing for left and right with the `auto` keyword
 * inside css functions (i.e. `calc()`) when wanting to use a Sass variable wrap with: `#{}`
 * clearfix hack for when element losses height from floats
+* `-webkit-background-clip: text;` - clips background excatly where the text is

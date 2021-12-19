@@ -255,3 +255,7 @@ image:Screenshot_20211212_192402.png[]
 * inside css functions (i.e. `calc()`) when wanting to use a Sass variable wrap with: `#{}`
 * clearfix hack for when element losses height from floats
 * `-webkit-background-clip: text;` - clips background excatly where the text is
+* https://github.com/linea-io/Linea-Iconset for icon font.
+* `<i>` used to be for italics, but now people use it for icons instead
+* used to cover entire section with background image: `background-size: cover;`
+* direct child selector for Sass `& > *`

@@ -259,3 +259,13 @@ image:Screenshot_20211212_192402.png[]
 * `<i>` used to be for italics, but now people use it for icons instead
 * used to cover entire section with background image: `background-size: cover;`
 * direct child selector for Sass `& > *`
+* `perspective` is used to help make the transform come towards the user
+** use a high value, or else get weird effect (i.e. 1500px or 150rem)
+** `-moz-perspective` - for firefox
+* background blend mode - used for blending multiple background images
+
+NOTE: don't nest Scss if not a child of the element, and it's a completely different element (i.e. no modifier)
+
+* `box-decoration-break: clone` - used for cloneing properties applied to initial box to all boxes created (i.e. when text has line break makes padding equal on all side of line break)
+* sometimes looks good when you have big font that you also make it thinner
+* `clip-path` - breaks border radius, so need to assign manually

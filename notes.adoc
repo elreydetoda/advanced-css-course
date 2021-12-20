@@ -269,3 +269,5 @@ NOTE: don't nest Scss if not a child of the element, and it's a completely diffe
 * `box-decoration-break: clone` - used for cloneing properties applied to initial box to all boxes created (i.e. when text has line break makes padding equal on all side of line break)
 * sometimes looks good when you have big font that you also make it thinner
 * `clip-path` - breaks border radius, so need to assign manually
+* `circle()`
+** `50%` - radius

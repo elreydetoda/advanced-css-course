@@ -31,6 +31,9 @@ body {
 ** opacity (`0` or `1`)
 ** transform
 * css animation might have a shake, but just use `backface-visibility: hidden;` and it should work without shake
++
+IMPORTANT: `backface-visibility` fixes all the weird quirks of CSS anitmations...
++
 * apply transitions to initial state (link/visited)
 * apply keyframe `0%` first: `animation-fill-mode: backwards`
 
@@ -271,3 +274,8 @@ NOTE: don't nest Scss if not a child of the element, and it's a completely diffe
 * `clip-path` - breaks border radius, so need to assign manually
 * `circle()`
 ** `50%` - radius
+* height/width needed for shape outside property
+* best way to move an object with float is using transform/translate
+* because image can be too big with width 100% (it'll not look right) you can sometime do height 100% instead
+* no way to have 2 transform properties at the same time
+* filter `brightness()` - below 100% makes image darker above 100% makes lighter

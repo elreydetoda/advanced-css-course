@@ -279,3 +279,11 @@ NOTE: don't nest Scss if not a child of the element, and it's a completely diffe
 * because image can be too big with width 100% (it'll not look right) you can sometime do height 100% instead
 * no way to have 2 transform properties at the same time
 * filter `brightness()` - below 100% makes image darker above 100% makes lighter
+* solid gradient: linear gradients 1st color: 0%-50%, 2nd color: 50%
+** can use transparent as color
+* direct/adjacent sibling selector: `+` (just like in emmet)
+* general sibling selector: `~`
+** used if element is a sibling, but not directly a sibling (i.e. right next to it, but lower down after another element)
+* use opacity 0 & visiblity hidden if you want it to disappear and not be visible
+** cannot annimate visbility, but you can animate opacity
+* no way to style radio buttons, instead create a span element that looks like button is getting selected instead and hid the builtin input button

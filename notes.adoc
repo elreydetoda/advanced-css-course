@@ -287,3 +287,8 @@ NOTE: don't nest Scss if not a child of the element, and it's a completely diffe
 * use opacity 0 & visiblity hidden if you want it to disappear and not be visible
 ** cannot annimate visbility, but you can animate opacity
 * no way to style radio buttons, instead create a span element that looks like button is getting selected instead and hid the builtin input button
+* navigation menu
+** checkbox hack & how it works
+** create custom animation timing functions using cubic bezier curves
+** animate solid-color gradients
+** how & why to use `transform-origin``

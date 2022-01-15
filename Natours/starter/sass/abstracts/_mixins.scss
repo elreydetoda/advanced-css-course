@@ -21,3 +21,14 @@
       ) + #{$extra_gutter_space}
   );
 }
+
+// default values: https://anotheruiguy.gitbooks.io/sassintherealworld_book-i/content/handy-tools/setting-default-mixin-values.html
+@mixin center_item($top_val: 50%, $left_val: 50%, $right_val: 0) {
+  top: $top_val;
+  @if $left_val > 0 {
+    left: $left_val;
+  } @else {
+    right: $right_val;
+  }
+  transform: translate(-50%, -50%);
+}

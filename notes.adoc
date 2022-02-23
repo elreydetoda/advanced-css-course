@@ -348,3 +348,7 @@ image:Screenshot_20220223_102130.png[flexbox]
 ** used in calc function
 ** are inherited
 * `:root` psuedo-class allows access to variables in whole document
+* use SVG instead of icon fonts
+** icon fonts fail more often than wanted, and doens't look right
+* svg stuff
+** sprite file (symbol-defs.svg) - has all the different svgs defined, so we can use only one file for all the icons

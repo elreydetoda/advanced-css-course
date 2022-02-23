@@ -352,3 +352,4 @@ image:Screenshot_20220223_102130.png[flexbox]
 ** icon fonts fail more often than wanted, and doens't look right
 * svg stuff
 ** sprite file (symbol-defs.svg) - has all the different svgs defined, so we can use only one file for all the icons
+* `margin-right: auto` - span all possible flexbox space till next item

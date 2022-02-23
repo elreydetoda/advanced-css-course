@@ -322,3 +322,22 @@ NOTE: don't nest Scss if not a child of the element, and it's a completely diffe
 == Build process for SASS
 
 compilation -> concatenation -> prefixing -> compression -> production
+
+== Flexbox
+
+* best for 1d layouts and replaces float
+* info about flexbox
+** flex container - `display: flex` or `display: flex-inline`
+** flex items
+** main axis (left -> right)
+** cross axis (top -> bottom)
+** flex-direction ( affects main axis )
+** justify-content ( how aligned on main axis )
+** align-items ( how aligned on cross axis )
+** align-content ( more than one row of content )
+* all flex order items start at 0
+** flex gorw is relative to other flex items grow value
+* instead of width use `flex-basis`
+
+
+image:Screenshot_20220223_102130.png[flexbox]

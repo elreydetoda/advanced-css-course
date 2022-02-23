@@ -338,6 +338,13 @@ compilation -> concatenation -> prefixing -> compression -> production
 * all flex order items start at 0
 ** flex gorw is relative to other flex items grow value
 * instead of width use `flex-basis`
-
-
++
 image:Screenshot_20220223_102130.png[flexbox]
++
+* custom properties instead of sass variables
+* css variables instead of SASS
+** manipulated in JS
+** edit them in dev tools
+** used in calc function
+** are inherited
+* `:root` psuedo-class allows access to variables in whole document

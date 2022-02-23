@@ -312,3 +312,9 @@ NOTE: don't nest Scss if not a child of the element, and it's a completely diffe
 ** regular image tags and logos
 * `srcset` attribute, width descriptors, and the `sizes` attribute of the `<img>` element
 * `min-resolution: 192dpi` - display density of apple retina screen (normally the reference)
+
+== Browser support
+
+* caniuse.com
+* graceful degredation with `@supports`` rule
+* `backdrop-filter`

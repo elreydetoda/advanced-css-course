@@ -292,3 +292,23 @@ NOTE: don't nest Scss if not a child of the element, and it's a completely diffe
 ** create custom animation timing functions using cubic bezier curves
 ** animate solid-color gradients
 ** how & why to use `transform-origin``
+
+== Responsive Images
+
+* 3 use cases for responsive images
+** Resolution switching
+*** Large screen -> small screen (decrease image resolution on smaller screen)
+** density switching
+*** like resolution switching, but the amount of physical pixels displayed is different
+*** 2x screens (high-res) say want 100px they'll use 200px to display the image
+*** serve higher resolution screens higher quality images
+** art direction
+*** different image on a smaller screen (only the important parts) serve completely different image
+
+* `srcset` attribute on `<img>` and `<source>` elements for density switching
+* using `<picture>` for art direction
+* css vs html images
+** css: background images
+** regular image tags and logos
+* `srcset` attribute, width descriptors, and the `sizes` attribute of the `<img>` element
+* `min-resolution: 192dpi` - display density of apple retina screen (normally the reference)

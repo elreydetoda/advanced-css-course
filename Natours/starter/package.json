@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "old-watch:sass": "# doesn't work: node-sass sass/main.scss css/style.css -w",
-    "dev:live": "live-server",
+    "dev:live": "live-server --host=0.0.0.0",
     "start": "npm-run-all --parallel dev:live watch:sass",
     "sass": "sass",
+    "live-server": "live-server",
     "watch:sass": "sass sass/main.scss css/style.css -w",
     "compile:sass": "sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",

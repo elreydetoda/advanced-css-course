@@ -401,16 +401,24 @@ body {
 }
 .review__user {
   display: flex;
+  align-items: center;
   margin-top: 2rem;
 }
+.review__user-box {
+  margin-right: auto;
+}
 .review__user-name {
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
 }
 .review__user-date {
   font-size: 1rem;
+  color: var(--color-grey-dark-3);
 }
 .review__rating {
-  margin-left: auto;
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

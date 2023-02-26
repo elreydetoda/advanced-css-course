@@ -404,8 +404,6 @@
 
     &__text {}
 
-    &__user {}
-
     &__photo {
         height: 4.5rem;
         width: 4.5rem;
@@ -414,24 +412,32 @@
     }
 
     &__user {
+
         display: flex;
+        align-items: center;
         margin-top: 2rem;
+
         &-box {
+            margin-right: auto;
 
         }
 
         &-name {
-            font-weight: 800;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
         }
 
         &-date {
             font-size: 1rem;
+            color: var(--color-grey-dark-3);
         }
     }
 
     &__rating {
-        margin-left: auto;
         color: var(--color-primary);
-        font-size: 2rem;
+        font-size: 2.2rem;
+        font-weight: 300;
     }
 }

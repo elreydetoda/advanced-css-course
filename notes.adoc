@@ -353,3 +353,7 @@ image:Screenshot_20220223_102130.png[flexbox]
 * svg stuff
 ** sprite file (symbol-defs.svg) - has all the different svgs defined, so we can use only one file for all the icons
 * `margin-right: auto` - span all possible flexbox space till next item
+* masks
+** can be used to "color" icons/svgs
+** use `-webkit-mask-image` and set the `url()` to be the svg you want
+** make sure to use `-webkit-mask-size: cover` to help SVG fit the height/width of mask

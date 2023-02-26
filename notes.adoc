@@ -357,3 +357,4 @@ image:Screenshot_20220223_102130.png[flexbox]
 ** can be used to "color" icons/svgs
 ** use `-webkit-mask-image` and set the `url()` to be the svg you want
 ** make sure to use `-webkit-mask-size: cover` to help SVG fit the height/width of mask
+* make an element disappear: `top: -100%`
